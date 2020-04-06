@@ -74,30 +74,33 @@
 .section-inner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 50px;
 }
 
 .section-text-container {
   text-align: center;
   width: 780px;
-  margin: 0 0 50px 100px;
-}
-
-.section-image-container {
-  padding-top: 50px;
+  margin-left: 50px;
+  padding-top: 20px;
 }
 
 .section-inner__title {
   font-size: 24px;
   color: #fff;
   font-family: Raleway;
-  margin-bottom: 35px;
 }
 
 .section-inner__text {
   font-size: 20px;
   color: #fff;
   line-height: 22px;
+  margin-top: 35px;
+}
+
+.article-container-inner {
+  /* padding-top: 60px;
+  padding-bottom: 70px; */
+  padding: 60px 0 70px 0;
 }
 
 .article-title {
@@ -105,21 +108,19 @@
   text-align: center;
   font-size: 24px;
   color: #333;
-  margin-top: 60px;
-  margin-bottom: 40px;
 }
 
 .article-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 40px;
 }
 
 .article-image-container {
   box-sizing: border-box;
-  margin: 0 100px 80px 0;
+  margin: 80px 0 0 100px;
   width: calc(33.3333333% - 200px / 3);
 }
 .article-image {
@@ -131,18 +132,22 @@
   opacity: 1;
 }
 
-.article-image-container:nth-child(3n) {
-  margin-right: 0;
+.article-image-container:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.article-image-container:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .article-container-bottom {
   text-align: center;
+  margin-top: 90px;
 }
 
 .article-container-bottom-box {
   display: inline-block;
   width: 530px;
-  padding-bottom: 70px;
 }
 
 .email-me__button-box {
@@ -173,9 +178,12 @@
   background-color: #333;
 }
 
+.section-bottom-inner {
+  padding: 70px 0 100px 0;
+}
+
 .section-bottom-title {
   font-family: Raleway;
-  padding: 70px 0;
   font-size: 24px;
   color: #fff;
   text-align: center;
@@ -187,10 +195,6 @@
   align-items: center;
 }
 
-.section-bottom-image {
-  margin-bottom: 100px;
-}
-
 .section-bottom-image__text {
   color: #fff;
   font-size: 16px;
@@ -199,7 +203,7 @@
 }
 
 .section-bottom-image {
-  margin-left: 180px;
+  margin: 70px 0 0 180px;
 }
 
 .section-bottom-image:first-child {
@@ -211,15 +215,19 @@
   text-align: center;
 }
 
-.sns-content {
+.sns-wrapper-inner {
   padding: 200px 0;
+}
+
+.sns-content {
+  list-style: none;
+  display:flex;
+  justify-content: center;
 }
 
 .btn-box {
   height: 100px;
   line-height: 100px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .btn {
