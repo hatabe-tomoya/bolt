@@ -1,8 +1,28 @@
 @charset "UTF-8";
 
+body {
+  font-family: Lato;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+main {
+  padding-top: 77px;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
+}
+
+.is-Raleway {
+  font-family: Raleway;
 }
 
 .hamburger-box {
@@ -27,7 +47,7 @@
   padding: 15px 0;
 }
 
-.fa-bolt {
+.bolt-button {
   font-size: 2em;
 }
 
@@ -37,12 +57,11 @@
   background-color: #74cfae;
   font-size: 12px;
   padding: 14px 12px;
-  margin-top: 7px;
+  transition: all 0.3s;
 }
 
 .contact-button:hover {
   color: #333;
-  transition: all 0.3s;
 }
 
 .theme {
@@ -69,6 +88,7 @@
 
 .section-container {
   background-color: #74cfae;
+  width: 100%;
 }
 
 .section-inner {
@@ -87,7 +107,6 @@
 .section-inner__title {
   font-size: 24px;
   color: #fff;
-  font-family: Raleway;
 }
 
 .section-inner__text {
@@ -98,13 +117,10 @@
 }
 
 .article-container-inner {
-  /* padding-top: 60px;
-  padding-bottom: 70px; */
   padding: 60px 0 70px 0;
 }
 
 .article-title {
-  font-family: Raleway;
   text-align: center;
   font-size: 24px;
   color: #333;
@@ -125,10 +141,10 @@
 }
 .article-image {
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
 .article-image:hover {
-  transition: all 0.3s;
   opacity: 1;
 }
 
@@ -163,11 +179,11 @@
   font-size: 12px;
   padding: 14px 20px;
   display: inline-block;
+  transition: all 0.3s;
 }
 
 .email-me__button:hover {
   color: #333;
-  transition: all 0.3s;
 }
 
 .article-container__text {
@@ -183,7 +199,6 @@
 }
 
 .section-bottom-title {
-  font-family: Raleway;
   font-size: 24px;
   color: #fff;
   text-align: center;
@@ -193,17 +208,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.section-bottom-image__text {
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 10px;
+  margin-top: 70px;
 }
 
 .section-bottom-image {
-  margin: 70px 0 0 180px;
+  margin-left:180px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.section-bottom-image figcaption {
+  margin-top: 10px;
 }
 
 .section-bottom-image:first-child {
@@ -226,21 +242,21 @@
 }
 
 .btn-box {
-  height: 100px;
-  line-height: 100px;
+  width: 185px;
 }
 
 .btn {
-  width: 185px;
   font-size: 2em;
   color: #74cfae;
   text-decoration: none;
   box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0;
+  transition: all 0.3s;
 }
 
-.btn-box:hover {
+.btn:hover {
   background-color:#fff;
-  transition: all 0.3s;
 }
 
 .footer {
@@ -248,9 +264,11 @@
 }
 
 .footer-inner {
-  display: flex;
-  justify-content: flex-end;
   padding: 20px 0 25px 0;
+}
+
+.footer-inner-box {
+  text-align: end;
 }
 
 .footer__text {
