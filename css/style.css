@@ -148,10 +148,10 @@ main {
 }
 
 .section-bottom-title {
-  padding-bottom:70px;
   font-size: 24px;
   color: #fff;
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .section-bottom-images {
@@ -165,10 +165,6 @@ main {
 .sns-wrapper {
   background-color: #f2f2f2;
   text-align: center;
-}
-
-.btn-box {
-  width: 185px;
 }
 
 .btn {
@@ -266,13 +262,6 @@ main {
     padding: 70px 0 100px 0;
   }
 
-  .section-bottom-title {
-    padding-bottom:70px;
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-  }
-
   .section-bottom-images {
     display: flex;
     justify-content: center;
@@ -288,6 +277,9 @@ main {
 
   .section-bottom-image:first-child {
     margin-left: 0;
+  }
+  .btn-box {
+    width: 185px;
   }
 
   .sns-content {
@@ -322,7 +314,7 @@ main {
 
   .article-images {
     box-sizing: border-box;
-    margin-top: 40px;
+    margin: 40px 0 80px 0;
   }
   
   .article-image-container {
@@ -350,6 +342,9 @@ main {
 
   .section-bottom-image:first-child {
     margin-top: 0;
+  }
+  .btn-box {
+    width: 25%;
   }
 
   .sns-content {
@@ -379,8 +374,11 @@ main {
     border-radius: 4px;
   }
 
-  .bars {
-    color: #f2f2f2;
+  .hamburger-border {
+    width: 20px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 3px;
   }
 
   .theme-inner {
@@ -413,6 +411,7 @@ main {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    margin: 40px 0 80px 0;
   }
   
   .article-image-container {
@@ -420,16 +419,12 @@ main {
     text-align: center;
   }
 
+  .article-image-container:nth-child(3n+1) {
+    margin-top: 80px;
+  }
+
   .article-image-container:first-child {
-    margin-top: 40px;
-  }
-
-  .article-image-container:nth-child(3n) {
-    margin-bottom: 80px;
-  }
-
-  .article-image-container:last-child {
-    margin-bottom: 80px;
+    margin-top: 0;
   }
 
   .email-me__button-box {
@@ -447,12 +442,12 @@ main {
   }
   
   .sns-wrapper-inner {
-    padding: 50px 15px 50px 15px;
+    padding: 50px 0;
     box-sizing: border-box;
   }
 
-  .sns-content {
-    display: inline-block;
+  .btn-box {
+    width: 100%;
   }
 }
   
